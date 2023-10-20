@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="my-4">New Post</h1>
+
+    <%= simple_form_for [@group, @post] do |f| %>
+        <div class="form-group">
+            <%= f.input :content, input_html: { class: "form-control"} %>
+        </div>
+        <%= f.submit "Submit", disable_with: "Submiting...", class: "btn btn-primary"%>
+    <% end %>
+</div>
